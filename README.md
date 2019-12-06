@@ -1,7 +1,7 @@
 # React-Redux-Router App File Structure
 This project contains my preferred file structure for building react apps using redux, react-router, thunk, re-reselct and loadable-components. It makes use of BEM, OOCSS and ITCSS structures.
 
-This file structure was mainly inspired from [https://github.com/CharlesStover/optimal-react-file-structure](Optimal File Structure for React Applications) and [https://www.youtube.com/watch?v=OSSpVLpuVWA&t=1517s](Learn Coding React/Redux tutorial).
+This file structure was mainly inspired from [Optimal File Structure for React Applications](https://github.com/CharlesStover/optimal-react-file-structure) and [Learn Coding React/Redux tutorial](https://www.youtube.com/watch?v=OSSpVLpuVWA&t=1517s).
 
 ## Available Scripts
 
