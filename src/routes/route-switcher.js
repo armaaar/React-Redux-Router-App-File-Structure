@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import loadable from '@loadable/component'
 import MetaTags from 'react-meta-tags';
+import PageLoading from '../components/page-loading'
 
-const Home = loadable(() => import('./home'))
+const Home = loadable(() => import('./home'), {fallback: <PageLoading />})
 
 export default class RouteSwitcher extends Component {
     render() {
