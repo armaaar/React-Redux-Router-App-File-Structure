@@ -1,3 +1,5 @@
+@import '../../assets/styles/settings/*.css';
+
 .App {
   text-align: center;
 }
@@ -7,7 +9,7 @@
 }
 
 .App-header {
-  background-color: var(--backgrou-color);
+  background-color: var(--background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

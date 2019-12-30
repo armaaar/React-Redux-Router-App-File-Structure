@@ -1,8 +1,10 @@
+@import 'settings/*';
 
-@import 'settings/colors.css';
+@import 'generic/*';
 
-@import 'generic/normalize.css';
+@import 'objects/*';
 
-@import 'elements/body.css';
-@import 'elements/code.css';
+@import 'elements/*';
+
+@import 'utils/*';
 

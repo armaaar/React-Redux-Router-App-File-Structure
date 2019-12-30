@@ -1,0 +1,16 @@
+:root {
+    --sm-break-point: 576px;
+    --md-break-point: 768px;
+    --lg-break-point: 992px;
+    --xl-break-point: 1200px;
+}
+
+@custom-media --sm-u-viewport (min-width: var(--sm-break-point));
+@custom-media --md-u-viewport (min-width: var(--md-break-point));
+@custom-media --lg-u-viewport (min-width: var(--lg-break-point));
+@custom-media --xl-u-viewport (min-width: var(--xl-break-point));
+
+@custom-media --xs-d-viewport (max-width: calc(var(--sm-break-point) - 1px));
+@custom-media --sm-d-viewport (max-width: calc(var(--md-break-point) - 1px));
+@custom-media --md-d-viewport (max-width: calc(var(--lg-break-point) - 1px));
+@custom-media --lg-d-viewport (max-width: calc(var(--xl-break-point) - 1px));
