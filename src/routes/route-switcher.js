@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import loadable from '@loadable/component'
-import PageLoading from '../components/page-loading'
+import PageLoading from '@/components/page-loading'
 
 const Home = loadable(() => import('./home'), {fallback: <PageLoading />})
 const Page404 = loadable(() => import('./404'), {fallback: <PageLoading />})

@@ -1,12 +1,12 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags';
-import logo from '../../assets/images/logo.svg'
+import logo from '@/assets/images/logo.svg'
 import './home.css'
 
-import connectWithRouter from '../../utils/connect-with-router'
-import createAutoSelector from '../../utils/auto-selector'
-import { changeName } from '../../actions/name-actions'
-import AppLink from '../../components/app-link';
+import connectWithRouter from '@/utils/connect-with-router'
+import createAutoSelector from '@/utils/auto-selector'
+import { changeName } from '@/actions/name-actions'
+import AppLink from '@/components/app-link';
 
 function Home (props) {
   return (

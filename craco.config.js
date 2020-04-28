@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     style: {
         postcss: {
@@ -18,5 +20,10 @@ module.exports = {
     babel: {
         "presets": ["@babel/preset-react"],
         "plugins": ["@babel/plugin-syntax-dynamic-import"]
-    }
+    },
+    webpack: {
+        alias: {
+            '@': path.resolve(__dirname, 'src/'),
+        },
+    },
 };
