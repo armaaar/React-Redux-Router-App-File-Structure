@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import loadable from '@loadable/component'
-import MetaTags from 'react-meta-tags';
 import PageLoading from '../components/page-loading'
 
 const Home = loadable(() => import('./home'), {fallback: <PageLoading />})
+const Page404 = loadable(() => import('./404'), {fallback: <PageLoading />})
 
 export default class RouteSwitcher extends Component {
     render() {
@@ -14,10 +14,7 @@ export default class RouteSwitcher extends Component {
                     <Home />
                 </Route>
                 <Route path="*">
-                    <MetaTags>
-                        <title>404 Not Found</title>
-                    </MetaTags>
-                    <h1>There Is No Match.</h1>
+                    <Page404 />
                 </Route>
             </Switch>
         )
